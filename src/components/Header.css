@@ -1,0 +1,147 @@
+.header {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.header-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 32px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: 4px solid transparent;
+  background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #f97316, #fbbf24) border-box;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role-badge {
+  position: absolute;
+  top: 72px;
+  left: 10px;
+  transform: rotate(-8deg);
+  display: inline-block;
+  background: rgba(107, 114, 128, 0.9);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 3px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.name-banner {
+  margin-top: 0px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 24px;
+  border-radius: 6px;
+  display: inline-block;
+  align-self: flex-start;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.name-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.branding {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rocket-icon {
+  font-size: 24px;
+}
+
+.branding-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 200px;
+  }
+  
+  .header-content {
+    padding: 15px 20px;
+  }
+  
+  .avatar-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  
+  .branding {
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+  }
+  
+  .branding-text {
+    font-size: 16px;
+  }
+  
+  .rocket-icon {
+    font-size: 18px;
+  }
+  
+  .name-text {
+    font-size: 15px;
+  }
+  
+  .name-banner {
+    padding: 10px 16px;
+  }
+}
+
