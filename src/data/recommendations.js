@@ -24,8 +24,23 @@ const recommendations = [
       link: "https://electrovladyslav.github.io/ai-digest/",
       linkText: "here"
     }
+  },
+  {
+    id: 4,
+    title: "AI Stories(ukr)",
+    link: "https://t.me/imatrofAI",
+    linkText: "t.me/imatrofAI",
+    description: "Telegram channel to keep track of the fast-changing AI world — news, model updates, tools, and insights from the artificial intelligence space."
+  },
+  {
+    id: 5,
+    title: "Oooh, Neuro Network(ukr)",
+    link: "https://t.me/oooneuro",
+    linkText: "t.me/oooneuro",
+    description: "Neural network news with a bit of fun — memes, interesting AI experiments, and useful tips for enthusiasts."
   }
 ]
 
 export default recommendations
+
 
